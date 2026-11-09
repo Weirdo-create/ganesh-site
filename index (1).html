@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Ganesh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0f"><meta name="description" content="Ganesh: my corner of the internet.">
+<meta property="og:type" content="website"><meta property="og:title" content="Ganesh"><meta property="og:description" content="My corner of the internet.">
+<meta property="og:image" content="https://ganesh-wtf.netlify.app/share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://ganesh-wtf.netlify.app/share.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0a0a0f;--card:#ffffff0a;--ln:#ffffff14;--tx:#ececf3;--mu:#8d8da0;--ac:#a78bfa;--ac2:#f472b6}
+[data-theme=crimson]{--bg:#0d0707;--ac:#ef4444;--ac2:#f59e0b}[data-theme=ocean]{--bg:#050f18;--ac:#38bdf8;--ac2:#34d399}[data-theme=gold]{--bg:#0b0905;--ac:#fbbf24;--ac2:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:300 16px/1.6 Inter,system-ui,sans-serif;min-height:100vh;overflow-x:hidden}
+.orb{position:fixed;width:60vmax;height:60vmax;border-radius:50%;filter:blur(90px);opacity:.22;z-index:-1;animation:fl 18s ease-in-out infinite alternate}
+.o1{background:var(--ac);top:-25vmax;left:-20vmax}.o2{background:var(--ac2);bottom:-30vmax;right:-20vmax;animation-delay:-9s}
+@keyframes fl{to{transform:translate(8vmax,6vmax) scale(1.15)}}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+main{max-width:600px;margin:0 auto;padding:max(24px,env(safe-area-inset-top)) 18px 110px}
+h1{font:400 clamp(72px,24vw,130px)/1.05 'Great Vibes',cursive;text-align:center;margin:30px 0 34px;background:linear-gradient(100deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 28px color-mix(in srgb,var(--ac) 45%,transparent))}
+section{background:var(--card);border:1px solid var(--ln);backdrop-filter:blur(14px);border-radius:20px;padding:20px;margin:0 0 18px;animation:up .8s both}
+section:nth-child(2){animation-delay:.1s}section:nth-child(3){animation-delay:.2s}section:nth-child(4){animation-delay:.3s}section:nth-child(n+5){animation-delay:.4s}
+@keyframes up{from{opacity:0;transform:translateY(22px)}}
+h2{font:600 11px/1 Inter;letter-spacing:.22em;text-transform:uppercase;color:var(--ac);margin:0 0 14px;display:flex;gap:6px;align-items:center}h2 span{flex:1}
+button,input,textarea{font:inherit;color:inherit;background:#ffffff0d;border:1px solid var(--ln);border-radius:12px;padding:9px 14px}
+input,textarea{width:100%;margin:4px 0;outline:0}input:focus,textarea:focus{border-color:var(--ac)}button{cursor:pointer;transition:.2s}button:hover{border-color:var(--ac)}
+.p{background:linear-gradient(100deg,var(--ac),var(--ac2));color:#111;border:0;font-weight:600}.sm{font-size:12px;padding:4px 10px;border-radius:9px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.mu{color:var(--mu);font-size:14px}
+.slw{position:relative}.sl{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:18px;scrollbar-width:none}.sl::-webkit-scrollbar{display:none}
+.sl>div{flex:0 0 100%;scroll-snap-align:center;aspect-ratio:4/5;position:relative;background:#0005}.sl img,.sl video{width:100%;height:100%;object-fit:cover}.sl .row{position:absolute;bottom:8px;left:8px}
+.dots{display:flex;justify-content:center;gap:6px;margin-top:12px}.dots i{width:6px;height:6px;border-radius:9px;background:#ffffff40;transition:.3s}.dots i.on{width:20px;background:var(--ac)}
+.ar{position:absolute;top:45%;width:34px;height:34px;padding:0;border-radius:50%;background:#000a;z-index:2}.ar.l{left:8px}.ar.r{right:8px}@media(hover:none){.ar{display:none}}
+.links a{color:var(--tx);text-decoration:none;padding:10px 22px;border-radius:999px;border:1px solid var(--ln);background:#ffffff0a;transition:.25s}.links a:hover{border-color:var(--ac);box-shadow:0 0 22px color-mix(in srgb,var(--ac) 40%,transparent)}
+.bk{max-height:270px;overflow-y:auto}.bk>div{display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--ln)}.bk span{flex:1}.bk .d{text-decoration:line-through;color:var(--mu)}.bk .h{opacity:.4}
+.bk input[type=checkbox]{width:18px;height:18px;accent-color:var(--ac);padding:0}
+.msg{padding:10px 0;border-bottom:1px solid var(--ln)}.msg b{color:var(--ac2);font-weight:600}.msg.h{opacity:.4}
+blockquote{margin:0 0 8px;font:italic 400 20px/1.5 Georgia,serif;border-left:2px solid var(--ac);padding-left:14px}a{color:var(--ac)}
+.pg{margin:0 0 14px}.pgt{display:flex;justify-content:space-between;font-size:13px;color:var(--mu);margin-bottom:6px}.pgb{height:8px;border-radius:9px;background:#ffffff12;overflow:hidden}.pgb i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,var(--ac),var(--ac2));box-shadow:0 0 14px var(--ac);transition:width .6s;animation:gr 1.2s}@keyframes gr{from{width:0}}
+#gate{position:fixed;inset:0;z-index:9;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .7s}
+#gate.x{opacity:0;pointer-events:none}#bar{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));display:flex;gap:8px;z-index:5}
+#bar button{border-radius:999px;background:#15151dcc;backdrop-filter:blur(10px)}.own{border-style:dashed;border-color:var(--ac)}
+</style></head><body>
+<div class="orb o1"></div><div class="orb o2"></div>
+<div id="gate"><h1 id="gn">Ganesh</h1><button class="p" id="enter" style="padding:12px 34px">Enter ♪</button></div>
+<main id="app"></main>
+<div id="bar"><button id="mute" hidden>♪</button><button id="share">Share</button><button id="lock" title="Owner">🔒</button><button id="edit" hidden>✎ Edit</button></div>
+<audio id="au" loop preload="auto"></audio>
+<script>
+const $=s=>document.querySelector(s),au=$('#au');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SEC={media:'Moments',bio:'About',links:'Find me',bucket:'Bucket list',quote:'Words & links'};
+let S={name:'Ganesh',bio:'',tg:'https://t.me/WTFGanesh',sn:'https://www.snapchat.com/add/ganex.sh',quote:'',qlink:'',music:'',theme:'',order:Object.keys(SEC),media:[],bucket:[]};
+let msgs=[],visits=0,pw=sessionStorage.pw||'',admin=false,editing=false;
+const api=(a,body,m='POST')=>fetch('/api?a='+a,{method:m,headers:{'content-type':'application/json','x-pw':pw},body:body?JSON.stringify(body):undefined}).then(async r=>{const d=await r.json().catch(()=>({}));if(!r.ok)throw new Error(d.error||r.status);return d});
+const save=()=>api('save',S).catch(e=>alert(e.message));
+const url=u=>/^https?:\/\//i.test(u)?u:(u?'https://'+u:'');
+async function load(){try{const d=await api('get',null,'GET');if(d.site)S={...S,...d.site};S.order=S.order.filter(k=>SEC[k]);msgs=d.msgs||[];visits=d.visits;admin=!!d.admin}catch(e){}$('#edit').hidden=!admin;paint()}
+const bar=()=>{const v=S.bucket.filter(x=>!x.hide),n=v.filter(x=>x.done).length,p=v.length?Math.round(n/v.length*100):0;return v.length?`<div class="pg"><div class="pgt"><span>${n} of ${v.length} achieved</span><span>${p}%</span></div><div class="pgb"><i style="width:${p}%"></i></div></div>`:''};
+function paint(){
+  document.documentElement.dataset.theme=S.theme||'';$('#gn').textContent=S.name;document.title=S.name;
+  if(S.music&&au.getAttribute('src')!==S.music)au.src=S.music;
+  const ed=admin&&editing,out=[`<h1>${esc(S.name)}</h1>`];
+  if(ed)out.push(`<section class="own"><h2>Owner panel · ${visits??0} visitors</h2><input id="nm" value="${esc(S.name)}" placeholder="Name"><input id="mu" value="${esc(S.music)}" placeholder="Music path or link, e.g. /music.mp3">
+  <div class="row" style="margin-top:8px">${[['','violet'],['crimson','crimson'],['ocean','ocean'],['gold','gold']].map(t=>`<button class="sm" data-th="${t[0]}">${t[1]}</button>`).join('')}<button class="sm p" id="sv">Save</button></div></section>`);
+  S.order.forEach((k,i)=>{let b='';
+    if(k=='media')b=`<div class="slw">${S.media.length>1?`<button class="ar l" data-sl="-1">‹</button><button class="ar r" data-sl="1">›</button>`:''}<div class="sl">${S.media.map((m,j)=>`<div>${m.type=='v'?`<video src="${esc(m.url)}" controls playsinline></video>`:`<img src="${esc(m.url)}" alt="">`}${ed?`<div class="row"><button class="sm" data-mm="${j}:-1">←</button><button class="sm" data-mm="${j}:1">→</button><button class="sm" data-md="${j}">✕</button></div>`:''}</div>`).join('')}</div>${S.media.length>1?`<div class="dots">${S.media.map((_,j)=>`<i class="${j?'':'on'}"></i>`).join('')}</div>`:''}</div>`+(S.media.length?'':'<span class="mu">Coming soon.</span>')+(ed&&S.media.length<4?`<p class="mu">Add photo:</p><input type="file" id="mup" accept="image/*"><input id="vu" placeholder="…or paste a direct video link, then press Enter">`:'');
+    if(k=='bio')b=ed?`<textarea id="bio" rows="3" maxlength="400">${esc(S.bio)}</textarea><button class="sm p" id="sb">Save bio</button>`:`<div>${esc(S.bio)||'<span class="mu">Coming soon.</span>'}</div>`;
+    if(k=='links')b=ed?`<input id="tg" value="${esc(S.tg)}" placeholder="Telegram link"><input id="sn" value="${esc(S.sn)}" placeholder="Snapchat link"><button class="sm p" id="sl">Save links</button>`:`<div class="row links">${S.tg?`<a href="${esc(url(S.tg))}" target="_blank" rel="noopener">Telegram</a>`:''}${S.sn?`<a href="${esc(url(S.sn))}" target="_blank" rel="noopener">Snapchat</a>`:''}</div>`;
+    if(k=='bucket')b=bar()+(ed?`<div class="row"><input id="bn" placeholder="New goal…" style="flex:1"><button class="p sm" id="ba">Add</button></div>`:'')+`<div class="bk">${S.bucket.map((x,j)=>(x.hide&&!ed)?'':`<div class="${x.hide?'h':''}"><input type="checkbox" ${x.done?'checked':''} ${ed?'':'disabled'} data-bt="${j}"><span class="${x.done?'d':''}">${esc(x.t)}</span>${ed?`<button class="sm" data-bh="${j}">${x.hide?'Show':'Hide'}</button><button class="sm" data-bu="${j}">↑</button><button class="sm" data-bx="${j}">✕</button>`:''}</div>`).join('')||'<span class="mu">No goals yet.</span>'}</div>`;
+    if(k=='quote')b=(S.quote?`<blockquote>${esc(S.quote)}</blockquote>`:'')+(S.qlink?`<a href="${esc(url(S.qlink))}" target="_blank" rel="noopener">${esc(S.qlink)}</a>`:'')+(ed?`<textarea id="q" rows="2" placeholder="Quote">${esc(S.quote)}</textarea><input id="ql" value="${esc(S.qlink)}" placeholder="Website link"><button class="sm p" id="sq">Save</button>`:'');
+    if(k=='quote'&&!b&&!ed)return;
+    out.push(`<section><h2><span>${SEC[k]}</span>${ed?`<button class="sm" data-so="${i}:-1">↑</button><button class="sm" data-so="${i}:1">↓</button>`:''}</h2>${b}</section>`)});
+  $('#app').innerHTML=out.join('');const sl=$('.sl');if(sl)sl.onscroll=()=>{const n=Math.round(sl.scrollLeft/sl.clientWidth);document.querySelectorAll('.dots i').forEach((d,j)=>d.classList.toggle('on',j==n))}}
+const mv=(a,i,d)=>{const j=i+d;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]]};
+document.addEventListener('click',async e=>{const t=e.target,g=a=>t.dataset?.[a];let c=true;
+  try{
+  if(t.id=='enter'){$('#gate').classList.add('x');$('#mute').hidden=false;if(S.music)au.play().catch(()=>{});return}
+  if(g('sl')){const s=$('.sl');s.scrollBy({left:s.clientWidth*g('sl'),behavior:'smooth'});return}
+  if(t.id=='share'){const d={title:S.name,text:S.name+'’s corner of the internet',url:location.href};if(navigator.share)navigator.share(d).catch(()=>{});else{navigator.clipboard?.writeText(location.href);t.textContent='Copied ✓'}return}
+  if(t.id=='mute'){au.paused?au.play():au.pause();t.style.opacity=au.paused?.4:1;return}
+  if(t.id=='lock'){if(admin){sessionStorage.pw=pw='';admin=editing=false;return load()}const p=prompt('Owner password');if(!p)return;pw=p;await load();if(admin)sessionStorage.pw=pw;else{pw='';alert('Wrong password')}return}
+  if(t.id=='edit'){editing=!editing;return paint()}
+  if(!admin)return;
+  if(g('th')!==undefined)S.theme=g('th');
+  else if(['sv','sb','sl','sq'].includes(t.id)){const v=i=>$('#'+i)?.value;if($('#nm'))S.name=v('nm').trim()||S.name,S.music=v('mu').trim();if($('#bio'))S.bio=v('bio');if($('#tg'))S.tg=v('tg'),S.sn=v('sn');if($('#q'))S.quote=v('q'),S.qlink=v('ql')}
+  else if(g('so')){const[i,d]=g('so').split(':');mv(S.order,+i,+d)}
+  else if(g('mm')){const[i,d]=g('mm').split(':');mv(S.media,+i,+d)}
+  else if(g('md'))S.media.splice(+g('md'),1);
+  else if(t.id=='ba'){const v=$('#bn').value.trim();if(v)S.bucket.unshift({t:v,done:false,hide:false})}
+  else if(g('bh'))S.bucket[g('bh')].hide=!S.bucket[g('bh')].hide;
+  else if(g('bu'))mv(S.bucket,+g('bu'),-1);
+  else if(g('bx'))S.bucket.splice(+g('bx'),1);
+  else c=false;
+  if(c){await save();paint()}}catch(x){alert(x.message||x)}});
+document.addEventListener('change',async e=>{const t=e.target;if(!admin)return;
+  if(t.dataset.bt){S.bucket[t.dataset.bt].done=t.checked;await save();paint()}
+  if(t.id=='mup'&&t.files[0]){const im=new Image();im.onload=async()=>{const r=Math.min(1,1000/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*r;c.height=im.height*r;c.getContext('2d').drawImage(im,0,0,c.width,c.height);S.media.push({type:'i',url:c.toDataURL('image/jpeg',.8)});await save();paint()};im.src=URL.createObjectURL(t.files[0])}});
+document.addEventListener('keydown',async e=>{if(e.key=='Enter'&&e.target.id=='vu'&&e.target.value.trim()){S.media.push({type:'v',url:e.target.value.trim()});await save();paint()}});
+paint();load();if(!localStorage.seen){localStorage.seen=1;api('visit').catch(()=>{})}
+</script></body></html>
